@@ -1,0 +1,115 @@
+@import "https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Noto+Serif+Vithkuqi&family=Roboto&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500&family=Noto+Serif+Vithkuqi&family=Roboto&display=swap";
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: #3e52a3;
+}
+* {
+  margin: 0;
+}
+main {
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2ebe3;
+  font-family: "Montserrat";
+}
+main article {
+  width: 800px;
+  border: none;
+  overflow: hidden;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+}
+@media (width < 850px) {
+  main article {
+    flex-direction: column;
+    margin: 0 1.5rem;
+  }
+}
+main article section {
+  width: 50%;
+  min-height: 100%;
+}
+main article section.img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../images/image-product-desktop.jpg");
+}
+@media (width < 850px) {
+  main article section.img {
+    height: 350px;
+    width: 100%;
+    background-image: url("../images/image-product-mobile.jpg");
+  }
+}
+main article section.content {
+  padding: 2rem 1.5rem;
+}
+@media (width < 850px) {
+  main article section.content {
+    width: 90%;
+    margin: 0 5%;
+  }
+}
+main article section.content p {
+  font-size: 18px;
+  padding: 1rem 0.5rem;
+  color: #6c7289;
+  text-wrap: balance;
+}
+main article section.content p.header-titel {
+  text-transform: uppercase;
+  padding: 0.5rem 0;
+  letter-spacing: 0.5rem;
+}
+main article section.content h1 {
+  font-size: 3.5rem;
+  font-family: "Fraunces";
+  text-wrap: balance;
+}
+main article section.content div {
+  display: flex;
+  flex-direction: row;
+}
+main article section.content div span.newprice {
+  color: #3c8067;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  font-family: "Fraunces";
+}
+main article section.content div span.oldprice {
+  padding: 8px 0 0 2.5rem;
+  color: #6c7289;
+  -webkit-text-decoration: line-through #6c7289 2px;
+  text-decoration: line-through #6c7289 2px;
+}
+main article section.content button {
+  background-color: rgba(60, 128, 103, 0.784);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto 0;
+  border: none;
+  border-radius: 1rem;
+  width: 80%;
+  cursor: pointer;
+}
+main article section.content button:hover {
+  background-color: #3c8067;
+}
+main article section.content button p {
+  color: #fff;
+  font-size: 1.5rem;
+}
+main article section.content button svg {
+  height: 1rem;
+  padding: 0 1rem 0 0;
+  aspect-ratio: 1/1;
+}
